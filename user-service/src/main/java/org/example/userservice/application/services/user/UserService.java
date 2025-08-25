@@ -25,7 +25,7 @@ public class UserService implements UserUseCases {
         UserDomain userDomain = userImpl.save(new UserDomain(userDTORequest.name(), userDTORequest.email()));
 
         String message = String.format(
-                "{\"nome\": \"%s\", \"email\": \"%s\"}",
+                "{\"name\": \"%s\", \"email\": \"%s\"}",
                 userDomain.getName(),
                 userDomain.getEmail());
 
